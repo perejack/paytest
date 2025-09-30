@@ -50,7 +50,7 @@ exports.handler = async (event) => {
 
     const order_id = makeOrderId();
 
-    const url = new URL('https://developer.paytalk.co.ke/apis/');
+    const url = new URL('https://developer.paytalk.co.ke/api/');
     url.searchParams.set('api_user', api_user);
     url.searchParams.set('trans_key', trans_key);
     url.searchParams.set('x_amount', String(amt));
